@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 const forgeSDK = require('forge-apis');
 var AWS = require('aws-sdk'),
-    endpoint = "https://secretsmanager.<your AWS region>.amazonaws.com",
-    region = "<your AWS region>",
-    secretName = "<your secret store name>",
+    endpoint = "https://secretsmanager.us-east-1.amazonaws.com",
+    region = "us-east-1",
+    secretName = "secretDemoTest",
     secret,
     binarySecretData;
 
